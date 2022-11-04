@@ -1,0 +1,12 @@
+.block {
+    display: block;
+}
+
+.mb-5 {
+    margin-bottom: 5rem;
+}
+
+.color-element {
+    max-width: 150px;
+    height: 100px;
+}
