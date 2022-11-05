@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/color-combinations/static/css/main.76031048.css",
+    "main.js": "/color-combinations/static/js/main.d24c5bbb.js",
+    "index.html": "/color-combinations/index.html",
+    "main.76031048.css.map": "/color-combinations/static/css/main.76031048.css.map",
+    "main.d24c5bbb.js.map": "/color-combinations/static/js/main.d24c5bbb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76031048.css",
+    "static/js/main.d24c5bbb.js"
+  ]
+}
