@@ -42,48 +42,49 @@ const ColorCombination = () => {
         setColorCombinations(newColorList)
     }
 
-    return (<>
-        <div className="d-flex justify-content-center p-3" style={container()}>
-            <div className="row mw-100" style={containerInner()}>
-                <div className="col-6">
-                    {colorCombinations.map((colors, index) => (<div key={index} style={card(colors)}></div>))}
-                </div>
-                <div className="col-6">
-                    <form>
-                        <div className="mb-3">
-                            <label htmlFor="count"
-                                   className="form-label">Количество</label>
-                            <input type="range" className="form-range" id="count" min="3" max="7" value={count}
-                                   onInput={handleChangeCount}/>
-                        </div>
-                        <div className="mb-3">
-                            <label htmlFor="lightness"
-                                   className="form-label">Насыщенность</label>
-                            <input type="range" className="form-range" id="saturation" min="-6" max="6"
-                                   value={saturation}
-                                   onInput={handleChangeSaturation}/>
-                        </div>
-                        <div className="mb-3">
-                            <label htmlFor="lightness"
-                                   className="form-label">Яркость</label>
-                            <input type="range" className="form-range" id="lightness" min="4" max="10" step="0.5"
-                                   value={lightness}
-                                   onInput={handleChangeLightness}/>
-                        </div>
-                        <div className="mb-3">
-                            <label htmlFor="color" className="form-label">Цвет</label>
-                            <input type="color"
-                                   className="form-range"
-                                   id="color"
-                                   value={color}
-                                   onInput={handleChangeColor}/>
+    return (
+        <>
+            <div className="d-flex justify-content-center p-3" style={container()}>
+                <div className="row mw-100" style={containerInner()}>
+                    <div className="col-6">
+                        {colorCombinations.map((colors, index) => (<div key={index} style={card(colors)}></div>))}
+                    </div>
+                    <div className="col-6">
+                        <form>
+                            <div className="mb-3">
+                                <label htmlFor="count"
+                                       className="form-label">Количество</label>
+                                <input type="range" className="form-range" id="count" min="3" max="8" value={count}
+                                       onInput={handleChangeCount}/>
+                            </div>
+                            <div className="mb-3">
+                                <label htmlFor="lightness"
+                                       className="form-label">Насыщенность</label>
+                                <input type="range" className="form-range" id="saturation" min="-7" max="7" step="0.2"
+                                       value={saturation}
+                                       onInput={handleChangeSaturation}/>
+                            </div>
+                            <div className="mb-3">
+                                <label htmlFor="lightness"
+                                       className="form-label">Яркость</label>
+                                <input type="range" className="form-range" id="lightness" min="4" max="10" step="0.2"
+                                       value={lightness}
+                                       onInput={handleChangeLightness}/>
+                            </div>
+                            <div className="mb-3">
+                                <label htmlFor="color" className="form-label">Цвет</label>
+                                <input type="color"
+                                       className="form-range"
+                                       id="color"
+                                       value={color}
+                                       onInput={handleChangeColor}/>
 
-                        </div>
-                    </form>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </>)
+        </>)
 }
 
 export default ColorCombination;
